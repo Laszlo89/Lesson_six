@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+@font-face {
+	font-family: "Open Sans Condensed";
+	src: url("../fonts/OpenSansCondensed-Light.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Open Sans Condensed";
+	src: url("../fonts/OpenSansCondensed-Bold.woff2") format("woff2");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+body {
+	line-height: 1;
+}
+
+/* ------------------ */
+
+body {
+	font-family: "roboto condensed", sans-serif;
+	font-size: 16px;
+	color: #2f2f2f;
+	line-height: 20px;
+}
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* HEADER */
+
+.header {
+	box-shadow: 2px 0 7px 0.1px #000;
+	background-color: #245a7a;
+}
+
+.header:hover {
+	opacity: 0.9;
+}
+
+.header__item {
+}
+
+.logo {
+	display: none;
+}
+
+.logo__link {
+}
+
+.logo img {
+	width: 5%;
+	border-radius: 50%;
+	padding: 20px;
+}
+
+.menu {
+	text-align: center;
+	padding: 20px;
+}
+
+.menu__list li {
+	display: inline;
+}
+
+.menu__link {
+	margin: 20px;
+	padding: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-shadow: 0.5px 0.5px 0.5px #000;
+	/* font-family: "open sans"; */
+}
+
+.menu__link:hover {
+	background-color: #992667;
+	border-radius: 5px;
+	box-shadow: 2px 0 7px 0.1px #000;
+	/* не использую цвет в outline потомучто будет не красиво :(  */
+	outline: 1px dashed transporent;
+}
+
+/* MAIN */
+
+.main {
+	padding: 20px 0;
+	overflow: hidden;
+}
+
+/* .intro {
+	max-height: 100vh;
+	overflow: auto;
+} */
+
+h1 {
+	font-size: 28px;
+	text-transform: uppercase;
+	margin: 0 0 20px 0;
+	text-align: center;
+}
+
+.title {
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 0 0 15px 0;
+	border-bottom: 1px dashed #fff;
+	padding: 0 0 5px 0;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.main p {
+	margin: 0 0 20px 0;
+}
+
+/* TECHNICAL */
+
+.technical {
+	max-width: 100%;
+	background-color: #245a7a;
+	color: #fff;
+	padding: 30px;
+	border-radius: 50px 50px 0 0;
+	font-weight: 300;
+	margin: 0 0 20px 0;
+	box-shadow: 2px 2px 7px 0.8px #000;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.technical img {
+	width: 40%;
+	float: left;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+
+.technical span {
+	font-weight: 700;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* HISTORY */
+
+.history {
+	max-width: 100%;
+	background-color: #992667;
+	color: #fff;
+	padding: 30px 30px 10px 30px;
+	font-weight: 300;
+	margin: 0 auto 20px auto;
+	box-shadow: 2px 2px 7px 0.8px #000;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.history .title {
+	text-align: right;
+}
+
+.history img {
+	width: 40%;
+	float: right;
+	margin-left: 20px;
+	border-radius: 10px;
+}
+
+/* MODERN */
+
+.modern {
+	max-width: 100%;
+	background-color: #245a7a;
+	color: #fff;
+	padding: 30px 30px 10px 30px;
+	font-weight: 300;
+	margin: 0 0 20px 0;
+	box-shadow: 2px 2px 7px 0.8px #000;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.modern img {
+	width: 40%;
+	float: left;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+
+.modern span {
+	font-weight: 700;
+}
+
+/* LIMITATIONS */
+
+.limitations {
+	max-width: 49.3%;
+	background-color: #992667;
+	color: #fff;
+	padding: 30px 30px 10px 30px;
+	font-weight: 300;
+	font-size: 16px;
+	box-shadow: 2px 2px 7px 0.8px #000;
+	display: inline-block;
+	border-radius: 0 0 0 50px;
+	text-shadow: 1px 1px 1px #000;
+	min-height: 660px;
+	overflow: hidden;
+}
+
+/* FUTURE */
+
+.future {
+	float: right;
+	max-width: 49.3%;
+	background-color: #245a7a;
+	color: #fff;
+	padding: 30px 30px 10px 30px;
+	font-weight: 300;
+	font-size: 16px;
+	box-shadow: 2px 2px 7px 0.8px #000;
+	display: inline-block;
+	border-radius: 0 0 50px 0;
+	text-shadow: 1px 1px 1px #000;
+	min-height: 660px;
+	overflow: hidden;
+}
+
+.future img {
+	width: 40%;
+	float: right;
+	margin-left: 20px;
+	border-radius: 10px;
+}
+
+.future .title {
+	text-align: right;
+}
+
+/* FOOTER */
+.footer {
+	box-shadow: 2px 0 7px 0.1px #000;
+	background-color: #245a7a;
+}
+
+.footer:hover {
+	opacity: 0.9;
+}
+.footer:hover .footer__item {
+	opacity: 1;
+	visibility: visible;
+}
+
+.footer__item {
+	opacity: 0;
+	visibility: hidden;
+}
