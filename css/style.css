@@ -77,7 +77,6 @@ body {
 .header {
 	box-shadow: 2px 0 7px 0.1px #000;
 	background-color: #245a7a;
-	border-radius: 0 0 90px 90px;
 }
 
 .header:hover {
@@ -102,7 +101,6 @@ body {
 
 .menu {
 	text-align: center;
-	padding: 20px;
 }
 
 .menu__list li {
@@ -111,19 +109,20 @@ body {
 
 .menu__link {
 	margin: 20px;
-	padding: 10px;
+	padding: 5px;
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 700;
+	font-size: 14px;
 	text-shadow: 0.5px 0.5px 0.5px #000;
-	/* font-family: "open sans condensed"; */
+	font-family: "open sans condensed";
+	letter-spacing: 2px;
 }
 
 .menu__link:hover {
 	background-color: #992667;
-	border-radius: 0 10px 0 10px;
-	box-shadow: 2px 0 7px 0.1px #000;
-	/* не использую цвет в outline потомучто будет не красиво :(  */
+	border-radius: 10px;
+	box-shadow: inset 2px 0 7px 0.1px #000;
 	outline: 1px dashed transporent;
 }
 
@@ -134,10 +133,19 @@ body {
 	overflow: hidden;
 }
 
-/* .intro {
-	max-height: 100vh;
+.intro {
+}
+
+.wrapper-scroll {
+	overflow: hidden;
+}
+
+.wrapper-scroll__inner {
 	overflow: auto;
-} */
+	height: 80vh;
+	padding-right: 20px;
+	margin-right: -20px;
+}
 
 h1 {
 	font-size: 28px;
@@ -227,6 +235,10 @@ h1 {
 	border-radius: 0 90px 0 90px;
 }
 
+.modern .title {
+	border-bottom: 1px solid #fff;
+}
+
 .modern img {
 	width: 40%;
 	float: left;
@@ -255,6 +267,9 @@ h1 {
 	overflow: hidden;
 }
 
+.limitations .title {
+	border-bottom: 1px dotted #fff;
+}
 /* FUTURE */
 
 .future {
@@ -282,13 +297,13 @@ h1 {
 
 .future .title {
 	text-align: right;
+	border-bottom: 1px dotted #fff;
 }
 
 /* FOOTER */
 .footer {
 	box-shadow: 2px 0 7px 0.1px #000;
 	background-color: #245a7a;
-	border-radius: 90px 90px 0 0;
 }
 
 .footer:hover {
